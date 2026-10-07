@@ -1,1 +1,461 @@
 index.html
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="NovaScience — Explorer, comprendre et découvrir la science.">
+
+    <title>NovaScience — Explorer. Comprendre. Découvrir.</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <a href="#" class="logo">
+        <span class="logo-symbol">✦</span>
+        <span>NOVA<span class="logo-light">SCIENCE</span></span>
+    </a>
+
+    <nav class="navigation">
+        <a href="#explorer">Explorer</a>
+        <a href="#articles">À la une</a>
+        <a href="#sources">Sources</a>
+        <a href="#apropos">À propos</a>
+    </nav>
+
+    <button id="themeButton" class="theme-button">
+        ☾
+    </button>
+
+</header>
+
+
+<main>
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <div class="eyebrow">
+                PLATEFORME SCIENTIFIQUE
+            </div>
+
+            <h1>
+                Explorer.<br>
+                <span>Comprendre.</span><br>
+                Découvrir.
+            </h1>
+
+            <p class="hero-text">
+                NovaScience rend la connaissance scientifique
+                plus accessible, documentée et vérifiable.
+            </p>
+
+
+            <!-- RECHERCHE -->
+
+            <div class="search-box">
+
+                <span class="search-icon">⌕</span>
+
+                <input
+                    id="searchInput"
+                    type="search"
+                    placeholder="Rechercher une connaissance scientifique..."
+                >
+
+                <button id="searchButton">
+                    Rechercher
+                </button>
+
+            </div>
+
+
+            <div class="quick-search">
+
+                <span>Explorer :</span>
+
+                <button data-category="Biologie">
+                    Biologie
+                </button>
+
+                <button data-category="Physique">
+                    Physique
+                </button>
+
+                <button data-category="Astronomie">
+                    Astronomie
+                </button>
+
+                <button data-category="IA">
+                    Intelligence artificielle
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- DOMAINES -->
+
+    <section id="explorer" class="section">
+
+        <div class="section-header">
+
+            <div>
+                <div class="eyebrow">
+                    EXPLORER
+                </div>
+
+                <h2>
+                    Les grands domaines
+                </h2>
+            </div>
+
+            <p>
+                Explorez les principales disciplines scientifiques
+                et découvrez de nouveaux sujets.
+            </p>
+
+        </div>
+
+
+        <div class="domains">
+
+            <button class="domain-card" data-category="Biologie">
+                <span class="domain-icon">🧬</span>
+                <strong>Biologie</strong>
+                <small>
+                    Le vivant, les cellules et la génétique
+                </small>
+            </button>
+
+
+            <button class="domain-card" data-category="Physique">
+                <span class="domain-icon">⚛️</span>
+                <strong>Physique</strong>
+                <small>
+                    Matière, énergie et lois fondamentales
+                </small>
+            </button>
+
+
+            <button class="domain-card" data-category="Chimie">
+                <span class="domain-icon">🧪</span>
+                <strong>Chimie</strong>
+                <small>
+                    Molécules, matière et transformations
+                </small>
+            </button>
+
+
+            <button class="domain-card" data-category="Astronomie">
+                <span class="domain-icon">🌌</span>
+                <strong>Astronomie</strong>
+                <small>
+                    Univers, étoiles, planètes et cosmos
+                </small>
+            </button>
+
+
+            <button class="domain-card" data-category="Terre">
+                <span class="domain-icon">🌍</span>
+                <strong>Sciences de la Terre</strong>
+                <small>
+                    Climat, géologie et océans
+                </small>
+            </button>
+
+
+            <button class="domain-card" data-category="Neurosciences">
+                <span class="domain-icon">🧠</span>
+                <strong>Neurosciences</strong>
+                <small>
+                    Cerveau, cognition et système nerveux
+                </small>
+            </button>
+
+
+            <button class="domain-card" data-category="Technologie">
+                <span class="domain-icon">💻</span>
+                <strong>Technologie</strong>
+                <small>
+                    Informatique et innovations
+                </small>
+            </button>
+
+
+            <button class="domain-card" data-category="IA">
+                <span class="domain-icon">🤖</span>
+                <strong>Intelligence artificielle</strong>
+                <small>
+                    IA, modèles et recherche numérique
+                </small>
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ARTICLES -->
+
+    <section id="articles" class="section">
+
+        <div class="section-header">
+
+            <div>
+                <div class="eyebrow">
+                    À LA UNE
+                </div>
+
+                <h2>
+                    Premiers dossiers
+                </h2>
+            </div>
+
+            <p>
+                Des sujets scientifiques expliqués clairement
+                et accompagnés de sources.
+            </p>
+
+        </div>
+
+
+        <div class="articles">
+
+            <article class="article-card" data-category="Astronomie">
+
+                <span class="article-category">
+                    ASTRONOMIE
+                </span>
+
+                <h3>
+                    Comment naissent les étoiles ?
+                </h3>
+
+                <p>
+                    Des nuages de gaz aux réactions nucléaires :
+                    comprendre les grandes étapes de la vie d'une étoile.
+                </p>
+
+                <button class="read-button">
+                    Découvrir →
+                </button>
+
+            </article>
+
+
+            <article class="article-card" data-category="IA">
+
+                <span class="article-category">
+                    INTELLIGENCE ARTIFICIELLE
+                </span>
+
+                <h3>
+                    Comment fonctionne une IA ?
+                </h3>
+
+                <p>
+                    Découvrez les principes fondamentaux des données,
+                    de l'entraînement et des modèles d'intelligence artificielle.
+                </p>
+
+                <button class="read-button">
+                    Découvrir →
+                </button>
+
+            </article>
+
+
+            <article class="article-card" data-category="Biologie">
+
+                <span class="article-category">
+                    BIOLOGIE
+                </span>
+
+                <h3>
+                    La cellule : unité du vivant
+                </h3>
+
+                <p>
+                    Découvrez les structures essentielles qui permettent
+                    aux organismes vivants de fonctionner.
+                </p>
+
+                <button class="read-button">
+                    Découvrir →
+                </button>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- ENGAGEMENT -->
+
+    <section class="science-banner">
+
+        <div class="science-check">
+            ✓
+        </div>
+
+        <div>
+
+            <div class="eyebrow">
+                ENGAGEMENT NOVASCIENCE
+            </div>
+
+            <h2>
+                La science doit pouvoir être vérifiée.
+            </h2>
+
+            <p>
+                Les futurs dossiers publiés sur NovaScience seront
+                accompagnés de références identifiables.
+                Les contenus proposés par la communauté seront
+                soumis à validation avant publication.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- SOURCES -->
+
+    <section id="sources" class="section">
+
+        <div class="section-header">
+
+            <div>
+
+                <div class="eyebrow">
+                    NOTRE MÉTHODE
+                </div>
+
+                <h2>
+                    Des sources, pas seulement des réponses.
+                </h2>
+
+            </div>
+
+            <p>
+                Notre objectif est de rendre les connaissances
+                scientifiques traçables et compréhensibles.
+            </p>
+
+        </div>
+
+
+        <div class="principles">
+
+            <div>
+                <span>01</span>
+                <h3>Identifier</h3>
+                <p>
+                    Présenter clairement le sujet et son contexte.
+                </p>
+            </div>
+
+
+            <div>
+                <span>02</span>
+                <h3>Documenter</h3>
+                <p>
+                    Associer les informations importantes
+                    à des sources fiables.
+                </p>
+            </div>
+
+
+            <div>
+                <span>03</span>
+                <h3>Vérifier</h3>
+                <p>
+                    Distinguer les faits établis,
+                    les incertitudes et les hypothèses.
+                </p>
+            </div>
+
+
+            <div>
+                <span>04</span>
+                <h3>Expliquer</h3>
+                <p>
+                    Rendre les connaissances accessibles
+                    sans déformer leur sens.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- À PROPOS -->
+
+    <section id="apropos" class="about">
+
+        <div>
+
+            <div class="eyebrow">
+                À PROPOS
+            </div>
+
+            <h2>
+                Un projet français avec une ambition internationale.
+            </h2>
+
+        </div>
+
+        <p>
+            NovaScience est conçu pour devenir une plateforme
+            scientifique ouverte, structurée et évolutive.
+            Cette première version constitue la base du projet.
+            Les prochaines versions intégreront les comptes,
+            la modération, le moteur de recherche avancé,
+            les contributions et plusieurs langues.
+        </p>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <div class="footer-logo">
+        ✦ NOVASCIENCE
+    </div>
+
+    <span>
+        © 2026 NovaScience
+    </span>
+
+    <span>
+        Explorer. Comprendre. Découvrir.
+    </span>
+
+</footer>
+
+
+<div id="notification" class="notification"></div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
