@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sciences — NOVASCIENCE</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #07111f;
+            color: white;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 6%;
+            background: #0b192b;
+            border-bottom: 1px solid #20334d;
+        }
+
+        .logo {
+            font-size: 26px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        nav {
+            display: flex;
+            gap: 25px;
+        }
+
+        nav a {
+            color: #dce8f7;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: #55b8ff;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 80px 20px 60px;
+            background: radial-gradient(
+                circle at center,
+                #12345a 0%,
+                #07111f 65%
+            );
+        }
+
+        .hero h1 {
+            font-size: 52px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            max-width: 750px;
+            margin: auto;
+            color: #b8c7d9;
+            font-size: 18px;
+            line-height: 1.7;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 60px 20px;
+        }
+
+        .title {
+            text-align: center;
+            font-size: 34px;
+            margin-bottom: 40px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: #0d1d31;
+            border: 1px solid #203b59;
+            border-radius: 15px;
+            padding: 30px;
+            transition: 0.25s;
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+            border-color: #55b8ff;
+        }
+
+        .icon {
+            font-size: 45px;
+            margin-bottom: 20px;
+        }
+
+        .card h2 {
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            color: #aebed0;
+            line-height: 1.6;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 18px;
+            border-radius: 7px;
+            background: #1687d9;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .button:hover {
+            background: #36a5f5;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: #050d18;
+            color: #8293a8;
+            border-top: 1px solid #20334d;
+        }
+
+        @media (max-width: 700px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 15px;
+            }
+
+            .hero h1 {
+                font-size: 40px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">NOVASCIENCE</div>
+
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="sciences.html">Sciences</a>
+        <a href="#">Actualités</a>
+        <a href="#">Articles</a>
+        <a href="#">À propos</a>
+    </nav>
+
+</header>
+
+<section class="hero">
+
+    <h1>🔬 Les Sciences</h1>
+
+    <p>
+        Explorez les grandes disciplines scientifiques,
+        découvrez leurs concepts fondamentaux et plongez
+        au cœur des découvertes qui permettent de mieux
+        comprendre notre monde et notre univers.
+    </p>
+
+</section>
+
+<main class="container">
+
+    <h2 class="title">Disciplines scientifiques</h2>
+
+    <div class="grid">
+
+        <div class="card">
+            <div class="icon">🌌</div>
+            <h2>Astronomie</h2>
+            <p>
+                Découvrez les étoiles, les planètes, les galaxies,
+                les trous noirs et les mystères de l'Univers.
+            </p>
+            <a href="#" class="button">Explorer</a>
+        </div>
+
+        <div class="card">
+            <div class="icon">🧬</div>
+            <h2>Biologie</h2>
+            <p>
+                Étudiez le vivant, les cellules, la génétique,
+                les organismes et l'évolution.
+            </p>
+            <a href="#" class="button">Explorer</a>
+        </div>
+
+        <div class="card">
+            <div class="icon">⚛️</div>
+            <h2>Physique</h2>
+            <p>
+                Comprenez la matière, l'énergie, les forces,
+                les particules et les lois fondamentales.
+            </p>
+            <a href="#" class="button">Explorer</a>
+        </div>
+
+        <div class="card">
+            <div class="icon">🧪</div>
+            <h2>Chimie</h2>
+            <p>
+                Explorez les atomes, les molécules,
+                les réactions chimiques et la matière.
+            </p>
+            <a href="#" class="button">Explorer</a>
+        </div>
+
+        <div class="card">
+            <div class="icon">🌍</div>
+            <h2>Sciences de la Terre</h2>
+            <p>
+                Découvrez notre planète, les océans,
+                les volcans, les séismes et le climat.
+            </p>
+            <a href="#" class="button">Explorer</a>
+        </div>
+
+        <div class="card">
+            <div class="icon">💻</div>
+            <h2>Informatique</h2>
+            <p>
+                Intelligence artificielle, programmation,
+                données et technologies numériques.
+            </p>
+            <a href="#" class="button">Explorer</a>
+        </div>
+
+        <div class="card">
+            <div class="icon">🧠</div>
+            <h2>Neurosciences</h2>
+            <p>
+                Explorez le cerveau, le système nerveux,
+                la cognition et le fonctionnement neuronal.
+            </p>
+            <a href="#" class="button">Explorer</a>
+        </div>
+
+        <div class="card">
+            <div class="icon">🌱</div>
+            <h2>Environnement</h2>
+            <p>
+                Biodiversité, écosystèmes, changement climatique
+                et protection de notre planète.
+            </p>
+            <a href="#" class="button">Explorer</a>
+        </div>
+
+    </div>
+
+</main>
+
+<footer>
+    © 2026 NOVASCIENCE — Explorer. Comprendre. Découvrir.
+</footer>
+
+</body>
+</html>
